@@ -7,7 +7,7 @@ using TicketingSystem.Dtos;
 
 namespace TicketingSystem.Queries
 {
-    public class GetTicketByIdQueryHandler : IRequestHandler<GetTicketByIdQuery, TicketDto>
+    public class GetTicketByIdQueryHandler : IRequestHandler<GetTicketByIdQuery, TicketDto?>
     {
         private readonly ApplicationDbContext _context;
 
@@ -16,7 +16,7 @@ namespace TicketingSystem.Queries
             _context = context;
         }
 
-        public async Task<TicketDto> Handle(GetTicketByIdQuery request, CancellationToken cancellationToken)
+        public async Task<TicketDto?> Handle(GetTicketByIdQuery request, CancellationToken cancellationToken)
         {
             var ticket = await _context.Tickets
                 .Where(t => t.Id == request.Id)
