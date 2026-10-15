@@ -2,6 +2,8 @@
 
 A commercial-level ticketing system backend built with .NET 8 using the CQRS pattern and MediatR library.
 
+Available at: https://ticketingsystem-cxhcc6cghhhng2c6.centralindia-01.azurewebsites.net/swagger/index.html
+
 ## Features
 
 - **CQRS Implementation**: Uses MediatR for clean separation of concerns
