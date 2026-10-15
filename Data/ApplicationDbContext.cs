@@ -1,8 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using TicketingSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace TicketingSystem.Data
 {

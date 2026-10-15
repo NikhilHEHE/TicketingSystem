@@ -1,6 +1,5 @@
 using MediatR;
 using TicketingSystem.Dtos;
-using System.Collections.Generic;
 
 namespace TicketingSystem.Queries
 {
